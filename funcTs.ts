@@ -29,3 +29,27 @@ const greetDefault = (name: string = 'Stranger') => {
 };
 
 greetDefault();
+
+const addNums = (num1: number, num2: number): number => {
+	//not necessary with typeScript because it infers anyway but it helps TS know what kind of a value does the function return
+	return num1 * num2;
+
+	//if given nothing TS assumes it is a void
+};
+
+function mysteryFunction(num: number) {
+	if (Math.random() < 0.5) {
+		return num.toString();
+	} else {
+		return num;
+	}
+} //TS knows that it eithers returns a string or number
+
+const anotherFunction = (fullObj: object) => {
+	for (let as in fullObj) {
+		console.log('hello', as);
+	}
+}; //also accept objects
+
+const colors = ['Yellow', 'Blue', 'Red'];
+colors.map((color) => {});
