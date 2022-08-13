@@ -52,4 +52,19 @@ const anotherFunction = (fullObj: object) => {
 }; //also accept objects
 
 const colors = ['Yellow', 'Blue', 'Red'];
-colors.map((color) => {});
+colors.map((color) => {
+	// return color.toFixed();  //ts will know about this too and know that the color is a string and has no method called toFixed();
+	return color.toUpperCase();
+});
+
+const printTwice = (msg: string): void => {
+	//telling typeScript wouldn't return anything
+	console.log(msg);
+	// return ''; //typeScript knows this is a void method so it would not return anything hence return is not accepted
+};
+
+function makeError(msg: string): never {
+	throw new Error(msg);
+} //this function should never return anything -- no return keyword allowed
+
+//Why not use void ? : Void technically returns undefined.
