@@ -21,10 +21,7 @@ console.log(twoFer('Elton')); //passing Elton as a name param to check output
 // isLeapYear(2012) => true
 // isLeapYear(2013) => false
 const isLeapYear = (year: number): boolean => {
-	if (year % 4 === 0 && year % 100 !== 0) {
-		return true;
-	}
-	return false;
+	return (year % 4 === 0 && year % 100 !== 0) || year % 400 === 0;
 };
 console.log(isLeapYear(1988)); //passing in a leap year to check if it outputs true
 console.log(isLeapYear(1989)); //should return false
