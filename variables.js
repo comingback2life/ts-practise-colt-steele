@@ -1,11 +1,9 @@
-let movieTitle: string = 'Batman';
+var movieTitle = 'Batman';
 movieTitle = 'Batman 2';
-
 //numbers - float, int
-let numberOfClass: number = 3;
+var numberOfClass = 3;
 numberOfClass = 4;
 numberOfClass++;
-
 //booleans
-let gameOver: boolean = false;
+var gameOver = false;
 gameOver = true;
