@@ -65,3 +65,15 @@ const mySong: Song = {
 const earnings = calculateEarningsv2(mySong);
 console.log(earnings);
 printSong(mySong);
+
+type PersonDetails = {
+	first: string;
+	last: string;
+	age?: number;
+};
+
+const printPersonDetails = (person: PersonDetails): void => {
+	console.log(`${person.first} ${person.last} ${person?.age} `);
+};
+printPersonDetails({ first: 'Samip', last: 'Pokharel' }); //here I am exlcuding the age which is possible because we have ? in front of our annoation in type
+printPersonDetails({ first: 'Samip', last: 'Pokharel', age: 123456 });

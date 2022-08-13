@@ -34,3 +34,8 @@ var mySong = {
 var earnings = calculateEarningsv2(mySong);
 console.log(earnings);
 printSong(mySong);
+var printPersonDetails = function (person) {
+    console.log("".concat(person.first, " ").concat(person.last, " ").concat(person === null || person === void 0 ? void 0 : person.age, " "));
+};
+printPersonDetails({ first: 'Samip', last: 'Pokharel' });
+printPersonDetails({ first: 'Samip', last: 'Pokharel', age: 123456 });
