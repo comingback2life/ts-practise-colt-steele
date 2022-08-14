@@ -37,3 +37,5 @@ function calculatePrice(price: number | string, tax: number): number {
 const nums: number[] = [1, 2, 3, 4]; // nums is a number type array
 
 const union: (number | string)[] = []; // uniion is not an array of numbers or string.
+
+const coords: (Pointv3 | Loc)[] = [];
