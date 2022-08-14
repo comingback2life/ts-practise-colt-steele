@@ -22,10 +22,18 @@ printAge('32'); // both values are accepted
  *
  */
 
-function calculatePrice(price: number | string, tax: number) {
+function calculatePrice(price: number | string, tax: number): number {
 	if (typeof price === 'string') {
-		price.replace('$', ''); //typeScript knows that it is a string
-	} else {
-		price * tax;
+		//typeScript knows that it is a string
+		return parseFloat(price.replace('$', '')) * tax;
 	}
+	return price * tax;
 }
+
+/**
+ * Array Union Types
+ */
+
+const nums: number[] = [1, 2, 3, 4]; // nums is a number type array
+
+const union: (number | string)[] = []; // uniion is not an array of numbers or string.
