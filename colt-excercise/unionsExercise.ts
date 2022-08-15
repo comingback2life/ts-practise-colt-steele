@@ -55,17 +55,17 @@ type hslColor = {
 };
 
 // Create an array called colors that can hold a mixture of RGB and HSL color types
-const mixture: RGBColor[] | hslColor[] = [];
+const mixture: (RGBColor | hslColor)[] = [];
 // **********************************************
 // ******************* PART 6 *******************
 // **********************************************
 // Write a function called greet that accepts a single string OR an array of strings
 // It should print "Hello, <name>" for that single person OR greet each person in the array with the same format
-const greet = (name: string | string[]): string => {
+const greet = (name: string | string[]): void => {
 	if (typeof name === 'object') {
 		for (let n of name) {
-			return `Hello ${n}`;
+			console.log(`Hello ${n}`);
 		}
 	}
-	return `Hello ${name}`;
+	console.log(`Hello ${name}`);
 };
