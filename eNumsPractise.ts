@@ -26,3 +26,20 @@ enum ArrowKeys {
 	LEFT,
 	RIGHT,
 }
+
+//what do eNums compile to ?
+
+/**
+ * enums generates additional code when compiled to javaScript
+ */
+
+enum orderStatus {
+	PENDING,
+	SHIPPED,
+	DELIVERED,
+	RETURNED,
+}
+
+/**
+ * that will compile to  the following in JS
+ */
