@@ -52,3 +52,11 @@ var orderStatus;
 })(orderStatus || (orderStatus = {}));
 
  */
+
+//We can also create a const enum that erases all the existence of the enum <variable> enum from Js and replaces it with underlying number
+const enum anotherOrderStatus {
+	PENDING,
+	SHIPPED,
+	DELIVERED,
+	RETURNED,
+}
