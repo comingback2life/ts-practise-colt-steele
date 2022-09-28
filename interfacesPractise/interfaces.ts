@@ -18,6 +18,7 @@ interface Person {
 	lastName: string;
 	nickname?: string; //nickname is optional
 	sayHi: (name: string) => string;
+	//sayHi():string // another way to defined a function
 }
 
 const Thomas: Person = {

@@ -8,11 +8,18 @@ var Thomas = {
     id: 1122,
     firstName: 'Thomas',
     lastName: 'Thomas',
-    nickname: 'Tom'
+    nickname: 'Tom',
+    sayHi: function (firstName) {
+        return 'Hello' + ' ' + firstName;
+    }
 };
 var Jerry = {
     id: 1212,
     firstName: 'Jerry',
-    lastName: 'Thomas'
+    lastName: 'Thomas',
+    sayHi: function (firstName) {
+        return "Hey! ".concat(firstName);
+    }
 };
 console.table(Jerry);
+console.table(Thomas);
