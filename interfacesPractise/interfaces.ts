@@ -17,6 +17,7 @@ interface Person {
 	firstName: string;
 	lastName: string;
 	nickname?: string; //nickname is optional
+	sayHi: (name: string) => string;
 }
 
 const Thomas: Person = {
@@ -24,11 +25,18 @@ const Thomas: Person = {
 	firstName: 'Thomas',
 	lastName: 'Thomas',
 	nickname: 'Tom',
+	sayHi: (firstName) => {
+		return 'Hello' + ' ' + firstName;
+	},
 };
 const Jerry: Person = {
 	id: 1212,
 	firstName: 'Jerry',
 	lastName: 'Thomas',
+	sayHi: (firstName) => {
+		return `Hey! ${firstName}`;
+	},
 };
 
 console.table(Jerry);
+console.table(Thomas);
