@@ -29,3 +29,22 @@ const chewy: serviceDogs = {
 	},
 	job: 'drug sniffer',
 };
+
+interface Human {
+	name: string;
+}
+interface Employee {
+	readonly id: number;
+	email: string;
+}
+interface Engineer extends Human, Employee {
+	level: string;
+	skills: string[];
+}
+const Samip: Engineer = {
+	name: 'Samip',
+	id: 1,
+	email: 'hello@hello.com',
+	level: 'Junior',
+	skills: ['git', 'tsx'],
+};
