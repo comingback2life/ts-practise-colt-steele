@@ -21,5 +21,13 @@ var Jerry = {
         return "Hey! ".concat(firstName);
     }
 };
-console.table(Jerry);
-console.table(Thomas);
+var shoes = {
+    name: 'Blue Sweat Shoes',
+    price: 100,
+    applyDiscount: function (discount) {
+        var newPrice = this.price * (1 - discount);
+        this.price = newPrice;
+        return newPrice;
+    }
+};
+console.log(shoes.applyDiscount(0.4));

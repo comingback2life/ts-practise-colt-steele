@@ -39,5 +39,18 @@ const Jerry: Person = {
 	},
 };
 
-console.table(Jerry);
-console.table(Thomas);
+interface Product {
+	name: string;
+	price: number;
+	applyDiscount(discount: number): number;
+}
+const shoes: Product = {
+	name: 'Blue Sweat Shoes',
+	price: 100,
+	applyDiscount(discount: number) {
+		const newPrice = this.price * (1 - discount);
+		this.price = newPrice;
+		return newPrice;
+	},
+};
+console.log(shoes.applyDiscount(0.4));
