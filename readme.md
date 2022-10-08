@@ -1,4 +1,4 @@
-# TypeScript Practice
+# TypeScript Practice from Colt Steele
 
 Practicing TypeScript from Colt Steele's course on Udemy.
 
@@ -13,3 +13,4 @@ Plain Practice.
 If you want to check the course out :
 
 https://www.udemy.com/course/learn-typescript/
+
